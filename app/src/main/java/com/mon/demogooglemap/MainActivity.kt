@@ -46,7 +46,6 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
         setupPermissions()
         init()
     }
-
     private fun init() {
         mGeoDataClient = com.google.android.libraries.places.compat.Places.getGeoDataClient(this)
         mPlaceDetectionClient = com.google.android.libraries.places.compat.Places.getPlaceDetectionClient(this)
