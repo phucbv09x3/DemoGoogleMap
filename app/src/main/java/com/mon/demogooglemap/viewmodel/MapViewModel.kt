@@ -15,7 +15,7 @@ class MapViewModel:ViewModel() {
     var direction=MutableLiveData<DirectionObject>()
     var searchLocation=MutableLiveData<SearchCompleteObject>()
     private val apiRepository:ApiRepository=Retrofit.Builder()
-            .baseUrl("https://maps.googleapis.com/")
+            .baseUrl("https://maps.googleapis.com")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(ApiRepository::class.java)
